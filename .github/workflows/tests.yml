@@ -8,8 +8,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Тест работоспособности кода
       run: |
-        chmod +x hw.sh
-        ./hw.sh
+        chmod +x runcode_check.sh
+        ./runcode_check.sh
     - name: Тест установки утилит
       run: |
         chmod +x install_check.sh
