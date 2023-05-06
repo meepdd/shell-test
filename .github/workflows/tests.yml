@@ -1,8 +1,8 @@
-name: Проверка репозитория
+name: Проверка скрипта на работоспособность
 on: [push]
 jobs:
   tests:
-    name: Тесты скриптов
+    name: Тесты скрипта
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
