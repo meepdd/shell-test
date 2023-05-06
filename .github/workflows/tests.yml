@@ -10,3 +10,7 @@ jobs:
       run: |
         chmod +x hw.sh
         ./hw.sh
+    - name: Тест установки утилит
+      run: |
+        chmod +x install_check.sh
+        ./install_check.sh
