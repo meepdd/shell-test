@@ -14,3 +14,7 @@ jobs:
       run: |
         chmod +x install_check.sh
         ./install_check.sh
+    - name: Тест проверки загрузки изображений
+      run: |
+        chmod +x download_check.sh
+        ./download_check.sh
