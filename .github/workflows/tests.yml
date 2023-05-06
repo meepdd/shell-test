@@ -18,3 +18,7 @@ jobs:
       run: |
         chmod +x download_check.sh
         ./download_check.sh
+    - name: Тест проверки сохранения гифки
+      run: |
+        chmod +x makegif_check.sh
+        ./makegif_check.sh
