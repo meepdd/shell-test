@@ -30,4 +30,4 @@ done
 # Меняем 10 картинок в гифку 
 convert -delay 100 -loop 0 $pictures/* $pictures/users.gif || { echo "NO"; }
 
-echo "OK"
+echo "OK: code works"
