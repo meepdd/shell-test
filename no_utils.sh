@@ -18,8 +18,8 @@ if [[ -d $pictures ]]
 then 
     echo "Папка для вывода найдена, продолжаем."
 else
-    echo "Папка для вывода не найдена, NO"
-    success=false
+   echo "Папка для вывода не найдена, создаем"
+   mkdir -p $pictures
 fi
 
 if [ "$success" = false ]; then
