@@ -24,5 +24,6 @@ jobs:
         ./makegif_check.sh
     - name: Тест установки утилиты
       run: |
-        chmod +x dont_install.sh
-        ./dont_install.sh
+        chmod +x runcode_check.sh
+        ./runcode_check.sh
+        sudo apt-get remove -y imagemagick
