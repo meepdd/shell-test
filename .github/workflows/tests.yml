@@ -22,3 +22,15 @@ jobs:
       run: |
         chmod +x makegif_check.sh
         ./makegif_check.sh
+    - name: Тест проверки работы скрипта с отсутствием интернет-соединения
+      run: |
+        chmod +x internet_connection.sh
+         chmod +x runcode_check.sh
+         ./internet_connection.sh
+        ./runcode_check.sh
+    - name: Тест проверки работы скрипта с отсутствием доступа к папке
+      run: |
+        chmod +x access_error.sh
+         chmod +x runcode_check.sh
+         ./access_error.sh
+        ./runcode_check.sh
