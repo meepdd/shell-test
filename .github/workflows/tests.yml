@@ -22,6 +22,10 @@ jobs:
       run: |
         chmod +x makegif_check.sh
         ./makegif_check.sh
+    - name: Тест проверки установки утилит без 1 утилиты
+      run: |
+        chmod +x dont_install.sh
+        ./dont_install.sh
     - name: Тест проверки работы скрипта с отсутствием доступа к папке
       run: |
         chmod +x access_error.sh
