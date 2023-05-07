@@ -29,20 +29,7 @@ jobs:
         # Запрещаем создание папки для сохранения изображений
         chmod +x ./runcode_check.sh
         ./runcode_check.sh
-    - name: Тест один из файлов изображений отсутствует
+    - name: Тест утилит
       run: |
-        #!/bin/bash
-
-        # Предположим, что установка imagemagick и jq выполнена успешно
-        # Создадим файл с неправильным именем в папке "non-existen_people"
-        touch non-existen_people/.jpg
-
-        # Запустим скрипт и сохраняем его вывод в файл
-        ./runcode_check.sh > output.txt
-
-        # Проверим, что вывод содержит "NO" и сообщение об ошибке для скачивания изображений
-        if grep -q "NO" output.txt && grep -q "No such file or directory" output.txt; then
-         echo "Test passed"
-            else
-          echo "Test failed"
-          fi
+        chmod +x no_utils.sh
+        ./no_utils.sh
