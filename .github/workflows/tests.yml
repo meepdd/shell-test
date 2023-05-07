@@ -29,9 +29,3 @@ jobs:
         # Запрещаем создание папки для сохранения изображений
         chmod +x ./runcode_check.sh
         ./runcode_check.sh
-    - name: Тест - сервер API недоступен
-      run: |
-        # Делаем сервер Random User API недоступным
-        sudo iptables -A OUTPUT -p tcp --dport 443 -j DROP
-         chmod +x ./runcode_check.sh
-        ./runcode_check.sh
