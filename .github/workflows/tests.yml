@@ -29,7 +29,7 @@ jobs:
         # Запрещаем создание папки для сохранения изображений
         chmod +x ./runcode_check.sh
         ./runcode_check.sh
-    - name: Тест утилит
+    - name: Тест на отсутствие утилит
       run: |
         chmod +x no_utils.sh
         ./no_utils.sh
