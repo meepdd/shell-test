@@ -22,8 +22,10 @@ jobs:
       run: |
         chmod +x makegif_check.sh
         ./makegif_check.sh
-    - name: Тест установки утилиты
+    - name: Тест на отсутствие папки
       run: |
-        chmod +x runcode_check.sh
+        rm -rf non-existen_people
+        chmod -w .
+        # Запрещаем создание папки для сохранения изображений
+        chmod +x ./runcode_check.sh
         ./runcode_check.sh
-        sudo apt-get remove -y imagemagick
