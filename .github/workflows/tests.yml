@@ -29,3 +29,9 @@ jobs:
         # Запрещаем создание папки для сохранения изображений
         chmod +x ./runcode_check.sh
         ./runcode_check.sh
+    - name: Тест один из файлов изображений отсутствует
+      run: |
+        chmod +x ./runcode_check.sh
+        ./runcode_check.sh
+        rm non-existen_people/5.jpg
+        ./runcode_check.sh
