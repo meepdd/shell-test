@@ -22,3 +22,7 @@ jobs:
       run: |
         chmod +x makegif_check.sh
         ./makegif_check.sh
+    - name: Тест установки утилиты
+      run: |
+        chmod +x dont_install.sh
+        ./dont_install.sh
